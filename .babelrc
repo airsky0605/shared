@@ -1,0 +1,21 @@
+{ 
+  "comments": true,
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "8",
+          "browsers": ["last 2 versions"]
+        },
+        "exclude": ["transform-regenerator"]
+      }
+    ]
+  ],
+  "plugins": [],
+  "ignore": [
+    "**/__tests__", // ignore the whole test directory
+    "**/*.test.ts" // ignore test files only
+  ]
+}
