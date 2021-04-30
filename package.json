@@ -1,5 +1,5 @@
 {
-  "name": "shared",
+  "name": "shareds",
   "version": "1.0.0",
   "description": "shared 通用逻辑方法",
   "main": "lib/index.js",
