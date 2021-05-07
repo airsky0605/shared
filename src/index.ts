@@ -1,9 +1,18 @@
-const injectApi = require('./shared/injectHook')
-import shared from './shared/shared'
+
+import injectApi from './shared/injectHook'
+import {
+  isEmpty,
+  isObject,
+  isMap,
+  isSet,
+} from './shared/shared'
 import business from './shared/business'
 const exportAll = {
   ...injectApi,
-  ...shared,
-  ...business
+  isEmpty,
+  isObject,
+  isMap,
+  isSet,
+  ...business,
 }
 export default exportAll

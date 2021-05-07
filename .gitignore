@@ -8,6 +8,11 @@ yarn-error.log*
 package-lock.json
 config/deploy.config.js
 
+
+node_modules/ 
+package-lock.json
+jest.config.js
+coverage/
 # Editor directories and files
 .idea
 .vscode

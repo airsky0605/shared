@@ -1,7 +1,7 @@
 import { Isobject } from '../interface/shared'
 
 //是否是一个对象
-export const isObject = (val:unknown) => {
+ const isObject = (val:unknown) => {
   return Object.prototype.toString.call(val) === '[object Object]'
 }
 //判断是否有可枚举的属性
@@ -54,7 +54,7 @@ const isEmpty = (val:unknown, options?:Isobject) => {
   }
   return false
 }
-export default{
+export {
   isEmpty,
   isObject,
   isMap,
